@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "password": "123456",
+    "playlists": [1, 3, 4, 5, 7],
+    "token": ""
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "email": "dan@gmail.com",
+    "password": "123456",
+    "playlists": [],
+    "token": ""
+  },
+  {
+    "id": 3,
+    "name": "Dan Doe",
+    "email": "aaa@gmai.com",
+    "password": "123456",
+    "playlists": [],
+    "token": ""
+  },
+  {
+    "id": 4,
+    "name": "Toan Nguyen",
+    "email": "toan@gmail.com",
+    "password": "123456",
+    "playlists": [1, 3, 4, 5, 7],
+    "token": ""
+  }
+]

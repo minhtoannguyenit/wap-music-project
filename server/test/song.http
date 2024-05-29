@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/songs
+
+
+###
+GET http://localhost:3000/songs?keyword=Shape
+
+
+###
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{ 
+    "title": "Stairway to Heaven",
+    "releaseDate": "1971-11-08",
+    "src": "https://example.com/songs/stairway-to-heaven.mp3"
+}
+
+###
+PUT http://localhost:3000/songs/1
+Content-Type: application/json
+
+{ 
+    "title": "Title_update",
+    "releaseDate": "1971-11-08",
+    "src": "https://example.com/songs/stairway-to-heaven.mp3"
+}
+
+###
+DELETE  http://localhost:3000/songs/1

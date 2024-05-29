@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/media.css" />
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/dd2e270553.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="../public/images/musical-logo.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="navbar">
+                <input id="search" type="text" name="search" placeholder="Please write song's name..." required>
+                <a href="http://"><button id="logout" type="submit">Logout</button></a>
+            </div>
+        </div>
+
+        <div class="list-songs">
+            <h2>Song you may interest</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Published Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="music-playlist">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="playlist">
+            <h2>Your playlist</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Published Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-playlist">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="player-container">
+            <div class="player">
+                <div class="player-info">
+                    <div id="lbl-song-title" class="title"></div>
+                    <div id="lbl-song-artist" class="artist"></div>
+                </div>
+                <div class="controls">
+                    <div id="lbl-current-time" class="time">00:00</div>
+                    <input type="range" id="seekBar" class="seekBar" value="0" min="0" max="100">
+                    <div id="lbl-total-time" class="time">00:00</div>
+                </div>
+                <div class="buttons">
+                    <button id="btn-shuffle" class="control-btn"><i id="mode-icon" class="fas fa-retweet"></i></button>
+                    <button id="btn-backward" class="control-btn"><i class="fas fa-backward"></i></button>
+                    <button id="btn-play" class="control-btn"><i class="fas fa-play"></i></button>
+                    <button id="btn-forward" class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/scripts/mediaplayer.js"></script>
+    <script src="../public/scripts/dashboard.js"></script>
+</body>
+<footer>
+    <div class="play-bar">
+        <div class="copyright">
+            <p>&copy; Copyright 2024 by TDM</p>
+        </div>
+    </div>
+</footer>
+</html>
